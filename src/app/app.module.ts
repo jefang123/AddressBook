@@ -2,10 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { TableComponent } from './table/table.component';
+import { TableListComponent } from './table-list/table-list.component';
+import { CardComponent } from './card/card.component';
+import { CardListComponent } from './card-list/card-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TableComponent,
+    TableListComponent,
+    CardComponent,
+    CardListComponent
   ],
   imports: [
     BrowserModule
