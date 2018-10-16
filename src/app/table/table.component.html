@@ -14,7 +14,7 @@
     <th>Fax</th>
   </tr>
   <tr *ngFor='let contact of contacts'>
-    <td>{{contact.CustomerID}}</td>
+    <td><a href=#{{contact.CustomerID}}>{{contact.CustomerID}}</a></td>
     <td>{{contact.CompanyName}}</td>
     <td>{{contact.ContactName}}</td>
     <td>{{contact.ContactTitle}}</td>

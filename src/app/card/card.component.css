@@ -1,0 +1,44 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  margin: 30px auto;
+  border-radius: 2%;
+  background-color: rgba(0, 183, 255, 0.952);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+.name {
+  display: flex;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.address {
+  display: flex;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.region {
+  display: flex;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.email {
+  display: flex;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+p {
+  margin-right: 40px;
+  margin-left: 20px;
+}

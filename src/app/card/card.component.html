@@ -1,14 +1,24 @@
-<div *ngFor='let contact of contacts'>
-  <p>{{contact.CustomerID}}</p>
-  <p>{{contact.CompanyName}}</p>
-  <p>{{contact.ContactName}}</p>
-  <p>{{contact.ContactTitle}}</p>
-  <p>{{contact.Address}}</p>
-  <p>{{contact.City}}</p>
-  <p>{{contact.Email}}</p>
-  <p>{{contact.Region}}</p>
-  <p>{{contact.Country}}</p>
-  <p>{{contact.PostalCode}}</p>
-  <p>{{contact.Phone}}</p>
-  <p>{{contact.Fax}}</p>
+<div class="contact" id={{contact.CustomerID}} *ngFor='let contact of contacts'>
+  <div class="header">
+    <p>Company: {{contact.CompanyName}}</p>
+    <p>{{contact.CustomerID}}</p>
+  </div>
+  <div class="name">
+    <p>Name: {{contact.ContactName}}</p>
+    <p>Title: {{contact.ContactTitle}}</p>
+  </div>
+  <div class="address">
+    <p>Address: {{contact.Address}}</p>
+    <p>City: {{contact.City}}</p>
+    <p>Postal: {{contact.PostalCode}}</p>
+  </div>
+  <div class="region">
+    <p>Region: {{contact.Region}}</p>
+    <p>Country: {{contact.Country}}</p>
+  </div>
+  <div class="email">
+    <p>Email: {{contact.Email}}</p>
+    <p>Phone: {{contact.Phone}}</p>
+    <p>Fax: {{contact.Fax}}</p>
+  </div>
 </div>
