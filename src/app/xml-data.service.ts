@@ -42,10 +42,15 @@ import * as $ from 'jquery';
 export class XmlDataService {
 
   constructor(private http: HttpClient) { 
-    this.http.get('assets/ab.xml')
-      .subscribe(res => console.log(res));
+    // this.http.get('assets/ab.xml')
+    //   .subscribe(res => console.log(res));
+    this.getJSON().subscribe(data => {
+      console.log(data)
+  });
   }
-
+  public getJSON(): Observable<any> {
+    return this.http.get("./assets/ab.json")
+  }
   // getContacts(): Observable<any>{
 
   //   this.http.get('/assets/ab.xml').subscribe(data=>{
@@ -53,17 +58,17 @@ export class XmlDataService {
   //   });
   // }
  
-  getColumns(): string[]{
-    return [
-      "CustomerID",
-      "CompanyName",
-      "ContactName",
-      "ContactTitle",
-      "Address",
-      "City",
-      "Email",
-      "PostalCode",
-      "Country",
-      "Phone"
-    ]};
+  // getColumns(): string[]{
+  //   return [
+  //     "CustomerID",
+  //     "CompanyName",
+  //     "ContactName",
+  //     "ContactTitle",
+  //     "Address",
+  //     "City",
+  //     "Email",
+  //     "PostalCode",
+  //     "Country",
+  //     "Phone"
+  //   ]};
 }

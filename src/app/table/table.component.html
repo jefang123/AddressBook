@@ -1,17 +1,30 @@
 <table>
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
+    <th>CustomerID</th>
+    <th>CompanyName</th> 
+    <th>ContactName</th>
+    <th>ContactTitle</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>Email</th>
+    <th>Region</th>
+    <th>Country</th>
+    <th>PostalCode</th>
+    <th>Phone</th>
+    <th>Fax</th>
   </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td> 
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td> 
-    <td>94</td>
+  <tr *ngFor='let contact of contacts'>
+    <td>{{contact.CustomerID}}</td>
+    <td>{{contact.CompanyName}}</td>
+    <td>{{contact.ContactName}}</td>
+    <td>{{contact.ContactTitle}}</td>
+    <td>{{contact.Address}}</td>
+    <td>{{contact.City}}</td>
+    <td>{{contact.Email}}</td>
+    <td>{{contact.Region}}</td>
+    <td>{{contact.Country}}</td>
+    <td>{{contact.PostalCode}}</td>
+    <td>{{contact.Phone}}</td>
+    <td>{{contact.Fax}}</td>
   </tr>
 </table>
